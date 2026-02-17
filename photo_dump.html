@@ -4,95 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="photo_dump.css">
     <link rel="icon" type="image/x-icon" href="images/blog_website_favicon.png">
     <title>Photo Dump | June 03, 2022</title>
-    <style>
-        /* Gallery Layout */
-        .gallery {
-            column-count: 1;
-            column-gap: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        @media (min-width: 600px) { .gallery { column-count: 2; } }
-        @media (min-width: 900px) { .gallery { column-count: 3; } }
-
-        .photo-card {
-            background-color: white;
-            break-inside: avoid;
-            margin-bottom: 20px;
-            border-radius: 12px;
-            padding: 10px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            cursor: zoom-in;
-        }
-
-        .photo-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 12px 20px -5px rgba(0, 0, 0, 0.15);
-        }
-
-        .photo-card img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            display: block;
-            transition: transform 0.5s ease;
-        }
-
-        .photo-card:hover img {
-            transform: scale(1.02);
-        }
-
-        .date-badge {
-            text-align: center;
-            display: block;
-            color: #636e72;
-            font-size: 0.8rem;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            margin-bottom: 40px;
-        }
-
-        /* --- LIGHTBOX STYLES --- */
-        #lightbox {
-            display: none;
-            position: fixed;
-            z-index: 1000;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.9);
-            justify-content: center;
-            align-items: center;
-        }
-
-        #lightbox img {
-            max-width: 90%;
-            max-height: 80%;
-            border-radius: 4px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.5);
-        }
-
-        #lightbox .close {
-            position: absolute;
-            top: 20px;
-            right: 30px;
-            color: white;
-            font-size: 40px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-        
-        .footer-nav {
-            text-align: center;
-            padding: 40px;
-        }
-    </style>
 </head>
 <body>
 
@@ -102,58 +16,61 @@
     </header>
 
     <div class="gallery">
-        <div class="photo-card" onclick="openLightbox(this)">
-            <img src="images/IMG20220603111040.jpg" alt="Memory 1">
+        <div class="photo-card">
+            <a href="images/IMG20220603111040.jpg" target="_blank">
+                <img src="images/IMG20220603111040.jpg" alt="Memory 1">
+            </a>
         </div>
-        <div class="photo-card" onclick="openLightbox(this)">
-            <img src="images/IMG20220603111131.jpg" alt="Memory 2">
+        <div class="photo-card">
+            <a href="images/IMG20220603111131.jpg" target="_blank">
+                <img src="images/IMG20220603111131.jpg" alt="Memory 2">
+            </a>
         </div>
-        <div class="photo-card" onclick="openLightbox(this)">
-            <img src="images/IMG20220603111154.jpg" alt="Memory 3">
+        <div class="photo-card">
+            <a href="images/IMG20220603111154.jpg" target="_blank">
+                <img src="images/IMG20220603111154.jpg" alt="Memory 3">
+            </a>
         </div>
-        <div class="photo-card" onclick="openLightbox(this)">
-            <img src="images/IMG20220603111213.jpg" alt="Memory 4">
+        <div class="photo-card">
+            <a href="images/IMG20220603111213.jpg" target="_blank">
+                <img src="images/IMG20220603111213.jpg" alt="Memory 4">
+            </a>
         </div>
-        <div class="photo-card" onclick="openLightbox(this)">
-            <img src="images/IMG20220603111318.jpg" alt="Memory 5">
+        <div class="photo-card">
+            <a href="images/IMG20220603111318.jpg" target="_blank">
+                <img src="images/IMG20220603111318.jpg" alt="Memory 5">
+            </a>
         </div>
-        <div class="photo-card" onclick="openLightbox(this)">
-            <img src="images/IMG20220603111322.jpg" alt="Memory 6">
+        <div class="photo-card">
+            <a href="images/IMG20220603111322.jpg" target="_blank">
+                <img src="images/IMG20220603111322.jpg" alt="Memory 6">
+            </a>
         </div>
-        <div class="photo-card" onclick="openLightbox(this)">
-            <img src="images/IMG20220603111429.jpg" alt="Memory 7">
+        <div class="photo-card">
+            <a href="images/IMG20220603111429.jpg" target="_blank">
+                <img src="images/IMG20220603111429.jpg" alt="Memory 7">
+            </a>
         </div>
-        <div class="photo-card" onclick="openLightbox(this)">
-            <img src="images/IMG20220603111514.jpg" alt="Memory 8">
+        <div class="photo-card">
+            <a href="images/IMG20220603111514.jpg" target="_blank">
+                <img src="images/IMG20220603111514.jpg" alt="Memory 8">
+            </a>
         </div>
-        <div class="photo-card" onclick="openLightbox(this)">
-            <img src="images/IMG20220603111538.jpg" alt="Memory 9">
+        <div class="photo-card">
+            <a href="images/IMG20220603111538.jpg" target="_blank">
+                <img src="images/IMG20220603111538.jpg" alt="Memory 9">
+            </a>
         </div>
-        <div class="photo-card" onclick="openLightbox(this)">
-            <img src="images/IMG20220603111601.jpg" alt="Memory 10">
+        <div class="photo-card">
+            <a href="images/IMG20220603111601.jpg" target="_blank">
+                <img src="images/IMG20220603111601.jpg" alt="Memory 10">
+            </a>
         </div>
     </div>
 
     <div class="footer-nav">
-        <a href="home_page.html">Back to home page</a>
+        <a href="index.html">Back to home page</a>
     </div>
-
-    <div id="lightbox" onclick="closeLightbox()">
-        <span class="close">&times;</span>
-        <img id="lightbox-img" src="">
-    </div>
-
-    <script>
-        function openLightbox(element) {
-            const imgSrc = element.querySelector('img').src;
-            document.getElementById('lightbox-img').src = imgSrc;
-            document.getElementById('lightbox').style.display = 'flex';
-        }
-
-        function closeLightbox() {
-            document.getElementById('lightbox').style.display = 'none';
-        }
-    </script>
 
 </body>
 </html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My favorite movies, directors, genres, and trailers.">
+    <link rel="stylesheet" href="design.css">
+    <link rel="icon" type="image/x-icon" href="images/blog_website_favicon.png">
+    <title>My Favorite Movies | Jazztine Ramos</title>
+    <style>
+        /* Clear movie item layout */
+        .movie-genre {
+            margin-bottom: 40px;
+        }
+
+        .movie-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            background-color: #fff;
+            gap: 20px;
+        }
+
+        .movie-poster {
+            width: 120px;
+            height: auto;
+            border-radius: 8px;
+            flex-shrink: 0;
+        }
+
+        .movie-info h3 {
+            margin: 0 0 5px 0;
+            font-size: 1.2rem;
+            color: #2d3436;
+        }
+
+        .movie-info p {
+            margin: 3px 0;
+            color: #636e72;
+        }
+
+        .movie-info a {
+            display: inline-block;
+            margin-top: 8px;
+            padding: 6px 15px;
+            background-color: #e67e22;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .movie-info a:hover {
+            background-color: #d35400;
+        }
+
+        h2 {
+            margin-top: 40px;
+            color: #2d3436;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+        }
+
+        .footer-nav {
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>My Favorite Movies</h1>
+    </header>
+
+    <main>
+
+        <section class="movies-intro">
+            <p>
+                Movies inspire me, entertain me, and sometimes even change the way I think. Here are some of my favorite films, categorized by genre.
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- Action / Adventure -->
+        <section class="movie-genre">
+            <h2>Action / Adventure</h2>
+
+            <div class="movie-item">
+                <img src="images/inception.jpg" alt="Poster of Inception" class="movie-poster">
+                <div class="movie-info">
+                    <h3>Inception</h3>
+                    <p>Director: Christopher Nolan</p>
+                    <p>Genre: Action, Sci-Fi</p>
+                    <a href="https://www.youtube.com/watch?v=YoHD9XEInc0" target="_blank">Watch Trailer</a>
+                </div>
+            </div>
+
+            <div class="movie-item">
+                <img src="images/avengers.jpg" alt="Poster of Avengers: Endgame" class="movie-poster">
+                <div class="movie-info">
+                    <h3>Avengers: Endgame</h3>
+                    <p>Director: Anthony & Joe Russo</p>
+                    <p>Genre: Action, Superhero</p>
+                    <a href="https://www.youtube.com/watch?v=TcMBFSGVi1c" target="_blank">Watch Trailer</a>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Drama / Romance -->
+        <section class="movie-genre">
+            <h2>Drama / Romance</h2>
+
+            <div class="movie-item">
+                <img src="images/your_name.png" alt="Poster of Your Name" class="movie-poster">
+                <div class="movie-info">
+                    <h3>Your Name</h3>
+                    <p>Director: Makoto Shinkai</p>
+                    <p>Genre: Romance, Drama, Fantasy</p>
+                    <a href="https://www.youtube.com/watch?v=xU47nhruN-Q" target="_blank">Watch Trailer</a>
+                </div>
+            </div>
+
+            <div class="movie-item">
+                <img src="images/interstellar.jpg" alt="Poster of Interstellar" class="movie-poster">
+                <div class="movie-info">
+                    <h3>Interstellar</h3>
+                    <p>Director: Christopher Nolan</p>
+                    <p>Genre: Drama, Sci-Fi</p>
+                    <a href="https://www.youtube.com/watch?v=zSWdZVtXT7E" target="_blank">Watch Trailer</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="footer-nav">
+            <a href="index.html">← Back to Home</a>     
+        </div>
+
+    </main>
+
+</body>
+</html>

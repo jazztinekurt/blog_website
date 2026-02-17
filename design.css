@@ -1,102 +1,278 @@
 :root {
-  --primary-color: #2d3436;
-  --accent-color: #e67e22; /* Warmer orange */
-  --bg-color: #f0f2f5;    /* Slightly cooler grey for better contrast */
+  --primary-color: #1f2933;
+  --accent-color: #e67e22;
+  --accent-hover: #cf711f;
+  --bg-color: #eef1f5;
   --card-bg: #ffffff;
-  --text-main: #2d3436;
-  --text-muted: #636e72;
-  --header-height: 120px;
+  --text-main: #1f2933;
+  --text-muted: #6b7280;
+  --border-color: #e5e7eb;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 body {
   font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
-  background-color: var(--bg-color);
+  background: linear-gradient(180deg, #f8fafc 0%, var(--bg-color) 100%);
   margin: 0;
-  line-height: 1.8; /* Increased for better readability */
+  line-height: 1.8;
   color: var(--text-main);
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 header {
-  background-color: var(--primary-color);
-  color: white;
-  padding: 3rem 1rem;
+  background: linear-gradient(135deg, var(--primary-color), #111827);
+  color: #ffffff;
+  padding: 4rem 1.5rem 3rem;
   text-align: center;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-  margin-bottom: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  margin-bottom: 3rem;
 }
 
 header h1 {
   margin: 0;
-  font-size: 2.2rem;
-  letter-spacing: -0.5px;
+  font-size: 2.4rem;
   font-weight: 800;
-  text-transform: lowercase; /* Keeps the "modern/minimal" vibe */
+  letter-spacing: -0.5px;
+  text-transform: lowercase;
 }
 
 main {
   background-color: var(--card-bg);
-  max-width: 720px; /* Narrower measure is easier on the eyes for reading */
-  margin: 0 auto 60px auto;
-  padding: 50px;
-  border-radius: 16px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.03);
+  max-width: 760px;
+  margin: 0 auto 80px;
+  padding: 60px;
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.04);
 }
 
-/* Typography Improvements */
 h2 {
   color: var(--primary-color);
   margin-top: 0;
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   font-weight: 700;
   line-height: 1.3;
+}
+
+p {
+  margin-bottom: 1.8rem;
+  font-size: 1.1rem;
+  color: var(--text-main);
 }
 
 p i {
   color: var(--accent-color);
   font-style: normal;
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 1.2px;
+  display: inline-block;
+  margin-bottom: 0.4rem;
 }
 
 hr {
   border: 0;
   height: 1px;
-  background: #eee;
-  margin: 2rem 0;
+  background: linear-gradient(to right, transparent, var(--border-color), transparent);
+  margin: 2.5rem 0;
 }
 
-p {
-  color: var(--text-main);
-  margin-bottom: 1.8rem;
-  font-size: 1.1rem;
+a {
+  text-decoration: none;
+  color: var(--accent-color);
+  font-weight: 500;
+  transition: all 0.25s ease;
 }
 
-/* Back Button Styling */
+a:hover {
+  color: var(--accent-hover);
+}
+
 a[href="home_page.html"] {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #f8f9fa;
-  border-radius: 8px;
-  border: 1px solid #ddd;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 30px;
+  padding: 12px 22px;
+  background-color: #f9fafb;
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
   color: var(--text-muted);
   font-weight: 600;
   font-size: 0.9rem;
+  transition: all 0.25s ease;
 }
 
 a[href="home_page.html"]:hover {
   background-color: var(--accent-color);
-  color: white;
+  color: #ffffff;
   border-color: var(--accent-color);
-  transform: translateX(-5px); /* Visual cue for "going back" */
+  transform: translateX(-6px);
+  box-shadow: 0 8px 20px rgba(230, 126, 34, 0.25);
 }
 
-/* Navigation Links (for other links) */
-a:link, a:visited {
-  text-decoration: none;
-  color: var(--accent-color);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+@media (max-width: 768px) {
+  main {
+    padding: 35px 25px;
+    margin: 0 20px 60px;
+  }
+
+  header {
+    padding: 3rem 1rem 2.5rem;
+  }
+
+  header h1 {
+    font-size: 1.9rem;
+  }
 }
+
+.intro {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.profile-img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.intro-text {
+  font-size: 1.1rem;
+  flex: 1;
+  min-width: 250px;
+}
+
+.blog-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin: 20px 0;
+}
+
+.blog-links a {
+  font-weight: 600;
+}
+
+.quote {
+  font-style: italic;
+  margin-top: 40px;
+  color: var(--text-muted);
+}
+
+.music-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.music-item {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  background-color: var(--card-bg);
+}
+
+.album-cover {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.music-info {
+  flex: 1;
+}
+
+.music-info h2 {
+  margin: 0 0 5px 0;
+  font-size: 1.2rem;
+}
+
+.music-info p {
+  margin: 0 0 15px 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .music-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .album-cover {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Gallery Layout */
+.gallery {
+    column-count: 1;
+    column-gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+@media (min-width: 600px) { .gallery { column-count: 2; } }
+@media (min-width: 900px) { .gallery { column-count: 3; } }
+
+.photo-card {
+    background-color: white;
+    break-inside: avoid;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: zoom-in;
+}
+
+.photo-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px -5px rgba(0, 0, 0, 0.15);
+}
+
+.photo-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.photo-card:hover img {
+    transform: scale(1.02);
+}
+
+.date-badge {
+    text-align: center;
+    display: block;
+    color: #636e72;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.footer-nav {
+    text-align: center;
+    padding: 40px;
+}
+

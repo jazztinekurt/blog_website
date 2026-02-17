@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My favorite TV shows, genres, and trailers.">
+    <link rel="stylesheet" href="design.css">
+    <link rel="icon" type="image/x-icon" href="images/blog_website_favicon.png">
+    <title>My Favorite TV Shows | Jazztine Ramos</title>
+    <style>
+        .show-genre {
+            margin-bottom: 40px;
+        }
+
+        .show-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            background-color: #fff;
+            gap: 20px;
+        }
+
+        .show-poster {
+            width: 120px;
+            height: auto;
+            border-radius: 8px;
+            flex-shrink: 0;
+        }
+
+        .show-info h3 {
+            margin: 0 0 5px 0;
+            font-size: 1.2rem;
+            color: #2d3436;
+        }
+
+        .show-info p {
+            margin: 3px 0;
+            color: #636e72;
+        }
+
+        .show-info a {
+            display: inline-block;
+            margin-top: 8px;
+            padding: 6px 15px;
+            background-color: #e67e22;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .show-info a:hover {
+            background-color: #d35400;
+        }
+
+        h2 {
+            margin-top: 40px;
+            color: #2d3436;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+        }
+
+        .footer-nav {
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>My Favorite TV Shows</h1>
+    </header>
+
+    <main>
+
+        <section class="shows-intro">
+            <p>
+                TV shows are a mix of thrilling stories, amazing visuals, and unforgettable characters. Here are some of my favorite shows, categorized by genre.
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- Action / Superhero -->
+        <section class="show-genre">
+            <h2>Action / Superhero</h2>
+
+            <div class="show-item">
+                <img src="images/moon_knight.jpg" alt="Poster of Moon Knight" class="show-poster">
+                <div class="show-info">
+                    <h3>Moon Knight</h3>
+                    <p>Genre: Action, Superhero</p>
+                    <a href="https://www.youtube.com/watch?v=x7Krla_UxRg" target="_blank">Watch Trailer</a>
+                </div>
+            </div>
+
+            <div class="show-item">
+                <img src="images/attack_on_titan.jpg" alt="Poster of Attack on Titan" class="show-poster">
+                <div class="show-info">
+                    <h3>Attack on Titan</h3>
+                    <p>Genre: Action, Anime, Fantasy</p>
+                    <a href="https://www.youtube.com/watch?v=MGRm4IzK1SQ" target="_blank">Watch Trailer</a>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Drama / Romance -->
+        <section class="show-genre">
+            <h2>Drama / Romance</h2>
+
+            <div class="show-item">
+                <img src="images/the_summer_i_turned_pretty.jpeg" alt="Poster of The Summer I Turned Pretty" class="show-poster">
+                <div class="show-info">
+                    <h3>The Summer I Turned Pretty</h3>
+                    <p>Genre: Romance, Drama</p>
+                    <a href="https://www.youtube.com/watch?v=LPNs5kKeEgE" target="_blank">Watch Trailer</a>
+                </div>
+            </div>
+
+            <div class="show-item">
+                <img src="images/moon_lovers.jpg" alt="Poster of Moon Lovers: Scarlet Heart Ryeo" class="show-poster">
+                <div class="show-info">
+                    <h3>Moon Lovers: Scarlet Heart Ryeo</h3>
+                    <p>Genre: Romance, Historical Drama</p>
+                    <a href="https://www.youtube.com/watch?v=2ljxyaAIphc" target="_blank">Watch Trailer</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="footer-nav">
+            <a href="index.html">← Back to Home</a>
+        </div>
+
+    </main>
+
+</body>
+</html>
