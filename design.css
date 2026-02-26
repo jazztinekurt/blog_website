@@ -208,7 +208,6 @@ a[href="home_page.html"]:hover {
   color: var(--text-muted);
 }
 
-/* Responsive */
 @media (max-width: 600px) {
   .music-item {
     flex-direction: column;
@@ -221,7 +220,7 @@ a[href="home_page.html"]:hover {
   }
 }
 
-/* Gallery Layout */
+
 .gallery {
     column-count: 1;
     column-gap: 20px;
@@ -276,3 +275,26 @@ a[href="home_page.html"]:hover {
     padding: 40px;
 }
 
+.intro-video {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.intro-video video {
+    max-width: 800px;
+    width: 100%;   
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.dream-map {
+    max-width: 900px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.dream-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
